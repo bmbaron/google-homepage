@@ -1,0 +1,31 @@
+body {
+
+}
+
+.container {
+}
+
+.row {
+    height: 20%;
+    padding: 100px;
+    
+}
+
+img {
+}
+
+input {
+    width:100%;
+    border-radius: 15px;
+    line-height: 30px !important;
+    box-shadow: 0 1px 6px;
+    }
+
+}
+
+input:hover {
+    box-shadow: 0 2px 12px;
+}
+
+#button1 {
+}
