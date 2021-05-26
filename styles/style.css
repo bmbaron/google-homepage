@@ -1,7 +1,37 @@
 .row {
-    height: 20%;
+    height: 10%;
     padding: 100px;    
 }
+
+#navbar {
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+}
+
+#navbar-L {
+
+    grid-column-start: 1;
+
+}
+
+#navbar-R {
+
+    grid-column-start: 4;
+
+}
+
+ul {
+
+
+}
+
+li {
+    display:inline-flex;
+
+}
+
+
 
 #searchbox{
     width:60%;
@@ -10,4 +40,18 @@
     min-width: 250px;
 }
 
+#footer {
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    text-align: center;
 
+}
+
+#footertext {
+    padding:2%;
+    background-color:lightslategrey;
+    line-height:5% !important;
+    color:white;
+}
