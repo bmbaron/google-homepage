@@ -1,4 +1,6 @@
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <link href="styles/style.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -9,12 +11,12 @@
 
 <body>
 
-    <div id="navbar">
-        <ul id="navbar-L">
+    <div class="navbar" id="navbar">
+        <ul class="navbar-L" id="navbar-L">
             <li><a href="default.asp">About</a></li>
             <li><a href="news.asp">Store</a></li>
         </ul>
-          <ul id="navbar-R">
+          <ul class="navbar-R" id="navbar-R">
             <li><a href="contact.asp">Gmail</a></li>
             <li><a href="about.asp">Images</a></li>
             <span class="material-icons">&#xE5C3;</span>
@@ -22,32 +24,37 @@
     </div>
 
 
-    <div class="container">
-
-        <div class="row">
-            <div class="text-center">
+    <div class="main-container">
+            <div class="logo">
                 <img src="images/logo.png"/>
-            </div><br>    
+            </div>   
             <form class="text-center">
-                <input type="text" id="searchbox" placeholder="search">
-            </input><br><br>
-            <div class="column"> 
-                <button class="button text-left" id="button1" type="submit"> Google Search </button>
-                <button class="button text-right" id="button2"> I'm feeling lucky! </button>
-            </div>
-
-            </form>         
-
-        </div><br><br>
-
-        <div class="container" id="footer">
-            <div class="row" id="footertext"> 
-                <p> this is a footer</p>
-            </div>
-        </div>
-
+                <input type="text" class="searchbox" id="searchbox" placeholder="search">
+                </input>
+                <div class="button-container"> 
+                    <button class="button text-left" id="button1" type="submit"> Google Search </button>
+                    <button class="button text-right" id="button2"> I'm feeling lucky! </button>
+                </div>
+            </form>       
     </div>
-
+    <div class="footer" id="footer">
+        <div class="country">
+            Vietnam
+        </div>
+        <div class="footer-links">
+            <ul class="links-left"> 
+                <li><a href="">About</a></li>
+                <li><a href="">Advertising</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">How Search works</a></li>
+            </ul>
+            <ul class="links-right"> 
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Settings</a></li>
+            </ul>
+        </div>
+    </div>
 
     <script src="scripts/main.js"></script>
 </body>
