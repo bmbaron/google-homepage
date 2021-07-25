@@ -73,6 +73,8 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 
 .main-container .logo {
@@ -82,8 +84,8 @@
 }
 
 
-.searchbox{
-    width:auto;
+.main-container .searchbox{
+    width:500px;
     line-height: 30px !important;
     display: flex;
     margin-left: auto;
@@ -96,18 +98,18 @@
     outline: none !important;
 }
 
-.searchbox:hover {
+.main-container .searchbox:hover {
     box-shadow: 1px 1px lightgrey;
 }
 
 
-.button-container {
+.main-container .button-container {
     margin-top: 3vh;
     display: flex;
     flex-wrap:nowrap;
     justify-content:center;
 }
-.button {
+.main-container .button-container .button {
     font-size: medium;
     margin: 10px;
     padding: 10px;
@@ -117,7 +119,7 @@
     background: #f2f2f2;
 }
 
-.button:hover {
+.main-container .button-container .button:hover {
 
     border: 1px solid lightgrey;
 }
@@ -202,17 +204,9 @@
 
 @media (max-width: 700px) {
 
-    .navbar .navbar-L {
-        margin-left: 5px;
-    }
-    .navbar .navbar-L li a {
-        padding: 0px;
-        margin: 5px;
-    }
-   
     .navbar .navbar-R {
         position: absolute;
-        right: 0px;
+        right: -10px;
     }
     .navbar .navbar-R li a {
         padding: 0px;
@@ -234,8 +228,28 @@
         min-width: 20px;
         margin-right: 10px;
     }
-    
+}
 
+@media (max-width: 500px) {
+    .navbar .navbar-L {
+        visibility: hidden;
+    }
+
+    .main-container {
+        width: 400px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-container .logo {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-container .searchbox {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 }
 
